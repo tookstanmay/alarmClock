@@ -15,11 +15,11 @@ setInterval(() => {
     minV = date.getMinutes(),
     hrV = date.getHours(),
     ampm = "AM";
-
-    hr.style.transform= `rotateZ(${(hrV * 30) + (minV/ 12)}deg)`;
-    min.style.transform= `rotateZ(${minV * 6}deg)`;
+    
     sec.style.transform= `rotateZ(${secV * 6}deg)`;
-
+    min.style.transform= `rotateZ(${minV * 6}deg)`;
+    hr.style.transform= `rotateZ(${(hrV * 30) + Math.round(minV/ 2)}deg)`;
+    
     if (hrV >= 12){
         hrV -= 12;
         ampm = "PM";
