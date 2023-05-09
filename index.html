@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alarm clock</title>
+
+    <!-- google fonts: poppins, valera round -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&family=Varela+Round&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+    <!-- stylesheet: styles.css -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="flex">
+    <div class="container flex">
+        <div class="clock flex">
+            <div class="numbers">
+                <span style="--i:0;"><b>12</b></span>
+                <span style="--i:1;"><b>3</b></span>
+                <span style="--i:2;"><b>6</b></span>
+                <span style="--i:3;"><b>9</b></span>
+    
+                <div class="circle" id="hr"><i></i></div>
+                <div class="circle" id="min"><i></i></div>
+                <div class="circle" id="sec"><i></i></div>
+            </div>
+        </div>
+    
+        <div class="alarm flex">
+            <div class="imageContainer flex">
+                <div class="timeContainer flex">
+                    <span id="digHr" class="digTime">00:</span>
+                    <span id="digMin" class="digTime">00</span>
+                </div>
+            </div>
+            <div class="setContainer flex">
+                <div class="column">
+                    <select>
+                        <option value="Hour" selected hidden>Hour</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <select>
+                        <option value="Minutes" selected hidden>Minutes</option>
+                    </select>                
+                </div>
+                <div class="column">
+                    <select>
+                        <option value="ampm" selected hidden>AM/ PM</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button>Set Alarm</button>
+    </div>
+
+    <footer class="flex">
+        made with by ❤️ tookstanmay
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
